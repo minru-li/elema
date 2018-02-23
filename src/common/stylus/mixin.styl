@@ -1,4 +1,3 @@
-//移动端1像素问题代码，写一个border-1px函数，传入color
 border-1px($color)
   position: relative
   &:after
@@ -13,7 +12,7 @@ border-1px($color)
 border-none()
   &:after
     display: none
-//header部分的5个优惠条件前面的小图片,移动端dpr的1x,2x,3x问题
+
 bg-image($url)
   background-image: url($url + "@2x.png")
   @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
